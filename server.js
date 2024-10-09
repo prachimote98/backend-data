@@ -17,8 +17,6 @@ const localauthmiddleware = passport.authenticate('local', {session: false})
 
 
 
-
-
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
@@ -51,7 +49,7 @@ app.post('/person', async (req, res) => {
     }
 });
 
-app.get('/person', localauthmiddleware,  async (req, res) => {
+app.get('/person', localauthmiddleware, async (req, res) => {
     try {
         const data = await Person.find();
         console.log("Data fetched");
@@ -84,9 +82,6 @@ app.get('/person/:workType', async (req, res) => {
 
     
     })
-
-
-
 
 
 

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const mongoUrl = 'mongodb://localhost:27017/newhotel';
+const mongoUrl = 'mongodb://localhost:27017/connectdb';
 
 // const mongoUrl = process.env.MongoDB_URL;
 
