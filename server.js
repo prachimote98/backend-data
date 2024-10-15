@@ -49,7 +49,7 @@ app.post('/person', async (req, res) => {
     }
 });
 
-app.get('/person', localauthmiddleware, async (req, res) => {
+app.get('/person', async (req, res) => {
     try {
         const data = await Person.find();
         console.log("Data fetched");
